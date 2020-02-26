@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://img.alicdn.com/tfs/TB1H22carr1gK0jSZR0XXbP8XXa-3468-2967.jpg?x-oss-process=image/resize,w_2048");
+    font-size: 14px;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul, dd, dl, p, table, figure, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+code {
+    font-family: "Microsoft YaHei", Helvetica, sans-serif;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    border: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+pre {
+    overflow: auto
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+td, th {
+    padding: 0;
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
+}
+

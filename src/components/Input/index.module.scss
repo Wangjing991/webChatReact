@@ -1,0 +1,100 @@
+$inputHeight: 32px; // 输入框高度
+$inputColor: #262a30; // 输入框内容颜色
+$inputDisabledColor: #ccc; // 不可用输入框内容颜色
+$inputDisabledBgColor: #fafafa; // 不可用输入框背景颜色
+$inputBorderColor: #ccc; // 输入框边框
+$inputHoverBorderColor: #999; // 输入框hover边框颜色
+$inputActiveBorderColor: #488ff9; // 输入框focus边框颜色
+$inputDisabledBorderColor: #ccc; // 不可用输入框边框颜色
+$placeholderColor: #ccc; // 输入框placeholder颜色
+$prefixLeft: 10px; // 左侧自定义内容距离输入框最左侧的距离
+$suffixRight: 10px; // 右侧自定义内容距离输入框最右侧的距离
+$borderRadius: 2px; // 输入框圆角
+
+.input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 4px 11px;
+  width: 100%;
+  height: $inputHeight;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $inputColor;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid $inputBorderColor;
+  border-radius: $borderRadius;
+
+  &::-moz-placeholder {
+    color: $placeholderColor;
+  }
+
+  &:-ms-input-placeholder {
+    color: $placeholderColor;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $placeholderColor;
+  }
+
+  &:hover {
+    border-color: $inputHoverBorderColor;
+  }
+  &:focus {
+    border-color: $inputActiveBorderColor;
+    outline: 0;
+  }
+  &:disabled {
+    background-color: $inputDisabledBgColor;
+    cursor: not-allowed;
+    color: $inputDisabledColor;
+
+    &:hover {
+      border-color: $inputDisabledBorderColor;
+    }
+  }
+
+}
+
+.affix_input {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $inputColor;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &.prefix_input {
+
+    .prefix {
+      position: absolute;
+      z-index: 1;
+      line-height: $inputHeight;
+      left: $prefixLeft;
+    }
+    .input {
+      padding-left: 30px;
+    }
+  }
+
+  &.suffix_input {
+    .input {
+      padding-right: 30px;
+    }
+
+    .suffix {
+      position: absolute;
+      z-index: 1;
+      line-height: $inputHeight;
+      right: $suffixRight;
+    }
+  }
+}
